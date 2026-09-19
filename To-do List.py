@@ -36,5 +36,4 @@ def main(page: ft.Page):
         sort_tasks()
     page.add(ft.Text("My Tasks", size=24, weight=ft.FontWeight.BOLD), ft.Row(controls=[new_task, priority_dropdown, ft.FloatingActionButton(icon=ft.Icons.ADD, on_click=add_clicked)]), tasks_view)
 
-
 ft.run(main)
