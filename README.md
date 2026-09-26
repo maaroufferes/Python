@@ -8,4 +8,5 @@ TP Project from College in Python :
         +To-do List.py - Create a simple Task List using flet
         +Primaires.py - Finds Prime Numbers between two Input Numbers using PyQt5 UI
         +PgmeCHAR.py - Creates a Game Show where you input your Phone Number and it follows a set Rules you win a Prize using PyQt5 UI
+        +File D´attente.py - Simulates a queue of clients and Outputs the Avg waiting time of a client 
 
