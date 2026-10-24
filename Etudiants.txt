@@ -1,0 +1,7 @@
+Ahmed Ben Ali, 20, GLSI1, 14.5
+Nour Trabelsi, 19, GLSI1, 15.2
+Leila Mansouri, 21, GLSI2, 13.8
+Youssef Hakimi, 20, GLSI1, 12.9
+Sarah Amri, 19, GLSI2, 16.1
+Ghada Ben Salem, 20, GLSI1, 14.8
+Mohamed Krimi, 21, GLSI2, 13.5
