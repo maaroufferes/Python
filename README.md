@@ -8,7 +8,8 @@ A collection of practical exercises (Travaux Pratiques) completed during my univ
 
 | File | Description |
 |------|-------------|
-| `Etudiants.py` | Student data management with file-based storage |
+| `Les_Fichiers.py` | Student management with file-based storage: read, add, display and compute statistics, through an interactive menu |
+| `Etudiants.txt` | Data file used by `Les_Fichiers.py` (one student per line: `name, age, group, average`) |
 | `Bibliotheque.py` | Library management system for books |
 | `Epicerie.py` | Computes statistics and data for the different products of a shop |
 | `Club-Sportif.py` | Football club management system |
@@ -23,6 +24,35 @@ A collection of practical exercises (Travaux Pratiques) completed during my univ
 | `To-do List.py` | Simple task list application | Flet |
 | `Primaires.py` | Finds all prime numbers between two user-supplied numbers | PyQt5 |
 | `PgmeCHAR.py` | Game show application: the user enters a phone number and, based on a set of rules, may win a prize | PyQt5 |
+
+## Student Management (`Les_Fichiers.py`)
+
+The script stores students in `Etudiants.txt`, one per line:
+
+```
+Ahmed Ben Ali, 20, GLSI1, 14.5
+```
+
+Functions:
+
+| Function | Purpose |
+|----------|---------|
+| `lire_fichier` | Prints the raw content of the file |
+| `ajouter_etudiant` | Appends a new student to the file |
+| `afficher_etudiants_propre` | Displays each student with labelled fields (name, age, group, average) |
+| `statistiques_etudiants` | Total students, overall average, count per group (GLSI1 / GLSI2) and best student |
+
+When launched, the script shows an interactive menu:
+
+| Command | Action |
+|---------|--------|
+| `1` | Display all students |
+| `2` | Add a student |
+| `3` | Display statistics |
+| `4` | Read the raw file content |
+| `0` | Quit |
+
+> **Note:** at startup the script rewrites `Etudiants.txt` with the initial students, then adds two more, so the file is reset on every run.
 
 ## Concepts Covered
 
@@ -46,11 +76,13 @@ A collection of practical exercises (Travaux Pratiques) completed during my univ
 | `flet` | `To-do List.py` |
 | `PyQt5` | `Primaires.py`, `PgmeCHAR.py` |
 
-`Tkinter` is included with most standard Python installations.
+`Tkinter` is included with most standard Python installations. `Les_Fichiers.py` uses only the standard library.
 
 ### Installation
 
 ```bash
+git clone <your-repository-url>
+cd <your-repository-folder>
 pip install numpy flet PyQt5
 ```
 
@@ -60,26 +92,30 @@ pip install numpy flet PyQt5
 python <filename>.py
 ```
 
-Example:
+Examples:
 
 ```bash
+python Les_Fichiers.py
 python Primaires.py
 ```
+
+Run `Les_Fichiers.py` from the folder that contains `Etudiants.txt`, since the file is opened with a relative path.
 
 ## Repository Structure
 
 ```
 .
-├── Etudiants.py
+├── Les_Fichiers.py
+├── Etudiants.txt
 ├── Bibliotheque.py
 ├── Epicerie.py
 ├── Club-Sportif.py
+├── File D´attente.py
 ├── Numpy.py
 ├── Tkinter.py
 ├── To-do List.py
 ├── Primaires.py
 ├── PgmeCHAR.py
-├── File D´attente.py
 └── README.md
 ```
 
